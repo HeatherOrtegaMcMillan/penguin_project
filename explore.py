@@ -27,7 +27,9 @@ def explore_univariate(df, figsize = (18,3)):
             plt.title(f'Distribution of {col}')
             plt.show()
         else:
-            print(f'{df[col]} is a {df[col].dtype}')
+            print(f'{col} is a {df[col].dtype}')
+            sns.countplot(x = df[col])
+            plt.show()
 
 ############## 
 
